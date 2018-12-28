@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	
+	<bean id="personel" class="com.amine.Personel">
+		<property name="adi" value="Amine"></property>
+		<property name="soyadi" value="yıldız"></property>
+		<property name="adres" value="SARIYER"></property>
+		<property name="dogumyili" value="1995"></property>
+		<property name="maas" value="2000"></property>
+		<property name="medenihal" value="true"></property>
+		<property name="ehliyet" value="true"></property>
+		<property name="telno" ><null></null></property>
+	</bean>
+</beans>
