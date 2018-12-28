@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+ <import resource="alis/alis.xml"/>
+ <import resource="satis/satis.xml"/>
+ <import resource="baglanti/baglanti.xml"/>
+ <import resource="musteri/musteri.xml"/>
+ <import resource="musteri/adres.xml"/>
+ <import resource="yonetim/yonetim.xml"/>
+ <import resource="yonetim/haklar.xml"/>
+
+</beans>
