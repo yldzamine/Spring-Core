@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	
+	
+	
+	<bean id="beanogrenci" class="com.amine.Ogrenci">
+		<property name="adi" value="Amine"></property>
+		<property name="soyadi" value="YILDIZ"></property>
+		<property name="bolumu" value="Bilgisayar Mühendisi"></property>
+	</bean>
+	
+	
+	<bean id="koleksiyonlar" class="com.amine.Koleksiyonlar">
+		<property name="ogrenciListesi">
+			<list>
+				<value>Emre AYDIN</value>
+				<ref bean="beanogrenci"/>
+			</list>
+		</property>
+		<property name="ogrenciSet">
+			<set>
+				<value>MAHMUT KASIM</value>
+				<value>MEHMET AYDIN</value>
+			</set>
+		</property>
+		<property name="ogrenciMap">
+			<map>
+				<entry key="JSF" value="Java Server Faces">	</entry>
+				<entry key="JSP" value="Java Server Paces">	</entry>
+				<entry key="Spring" value-ref="beanogrenci"></entry>
+			</map>
+		</property>
+		<property name="ogrenciProperties">
+			<props>
+				<prop key="1">EMİR SARRAFOĞLU</prop>
+			</props>
+		</property>
+	</bean>
+</beans>
