@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+
+
+    <context:annotation-config/>
+        
+          <bean id="ders" class="com.amine.Ders">
+   	<property name="ders" value="Spring"></property>
+   	<property name="puan" value="86"></property>
+   	<!-- <property name="ogrenci" ref="beanOgrenci"></property> -->
+   </bean>
+   
+   <bean id="beanOgrenci" class="com.amine.Ogrenci">
+		<property name="adi" value="Amine"></property>
+		<property name="soyadi" value="YILDIZ"></property>
+	    <property name="yasi" value="21"></property> 
+	</bean>
+	
+	 <bean id="beanOgrenci2" class="com.amine.Ogrenci">
+		<property name="adi" value="Muhammed"></property>
+		<property name="soyadi" value="Gedikli"></property>
+	    <property name="yasi" value="21"></property> 
+	</bean>
+	
+	 <bean id="beanOgrenci3" class="com.amine.Ogrenci">
+		<property name="adi" value="Mehmet"></property>
+		<property name="soyadi" value="YILDIZ"></property>
+	    <property name="yasi" value="24"></property> 
+	</bean>
+
+ 
+</beans>
+
