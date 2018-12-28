@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="beanOgrenci" class="com.amine.Ogrenci">
+		<property name="ogrenciListesi">
+			<list>
+				<value>Amine Yıldız</value>
+				<value>Mehmet Gün</value>
+				<value>Muhammed Gedik</value>
+				<value>Mahmud Tunçer</value>
+			</list>
+		</property>
+		<property name="ogrenciSet">
+			<set>
+				<value>Memduh Sel</value>
+				<value>Yıldız Tilbe</value>
+			</set>
+			
+			
+		</property>
+		<property name="ogrenciMap">
+			<map>
+				<entry key="1" value="Hasan Öz"> </entry>
+				<entry key="2" value="Ahmet Celil"></entry>
+				<entry key="3" value="Nur Ozal"></entry>
+			</map>
+		</property>
+		<property name="ogrenciProperties">
+			<props>
+				<prop key="Bay">Kategori 1</prop>
+				<prop key="Bayan">Kategori 2</prop>
+				
+			</props>
+		</property>
+	</bean>
+</beans>
