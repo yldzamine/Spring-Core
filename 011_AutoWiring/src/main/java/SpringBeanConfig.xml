@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	
+	<bean id="adres" class="com.amine.Adres">
+		<property name="tamAdres" value="Sarıyer"></property>
+	</bean>
+	
+	<bean id="calisan" class="com.amine.Ogrenci" autowire="constructor">
+		<property name="adi" value="Amine"></property>
+		<property name="soyadi" value="YILDIZ"></property>
+		<!-- <property name="adres" ref="adres"></property> -->
+	</bean>
+	
+</beans>
